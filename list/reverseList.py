@@ -21,6 +21,7 @@
 # reverselist([8,4,6,90])
 
 # 4th way: o(n)
+# This scenario is possible if the array is in sorted order
 def reverselist(arr):
     s = 0
     e = len(arr)-1
