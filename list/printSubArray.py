@@ -2,10 +2,10 @@
 
 def subarray(arr):
     for i in range(len(arr)):
-        for j in range(len(arr)+1):
+        for j in range(i,len(arr)):
             print()
-            for k in range(i,j):
+            for k in range(i,j+1):
                 print(arr[k],end=',')
             
 
-subarray([10,89,65,78,60])
+subarray([-2,3,4,-1,5,-12,6,1,3])
