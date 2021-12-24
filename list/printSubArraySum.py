@@ -1,5 +1,5 @@
-#Find out the largest sum of sub array suppose -2,3,4 = 5
-# O(n^3)
+#Find out the largest sum of sub array suppose -2,3,4 = 5 
+# O(n^3)using Brute Force Algo
 class A:
     
     def printSubArraySum(arr):
@@ -15,4 +15,22 @@ class A:
 
 a = A
 print(a.printSubArraySum([-2,3,4,-1,5,-12,6,1,3]))
+
+#Find out the largest sum of sub array suppose -2,3,4 = 5
+# O(n) using Prefix sum algo- this is kadane's. O(1) space.
+
+
+def printSubArraySum1(arr):
+    currentSum = 0
+    largestSum = 0
+    for i in arr:
+        currentSum = currentSum + i
+        if currentSum < 0:
+            currentSum = 0
+        largestSum = max(currentSum,largestSum)
+
+    print(largestSum)
+
+printSubArraySum1([-2,3,4,-1,5,-12,6,1,3])
+
 
