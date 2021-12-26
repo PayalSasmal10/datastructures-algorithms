@@ -1,5 +1,5 @@
 # Implement a function that takes array of integers as input and returns the largest element.
-# sorted or sort function time complexity is o(n logn)
+# sorted or sort function time complexity is o(nlogn)
 class largestElement:
     def largestelementofaList(arr):
         ls = sorted(arr)
