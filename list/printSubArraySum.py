@@ -31,6 +31,7 @@ def printSubArraySum1(arr):
 
     print(largestSum)
 
-printSubArraySum1([-2,3,4,-1,5,-12,6,1,3])
+# printSubArraySum1([2,3,4,-1,5,-12,6,1,3])
+printSubArraySum1([1,-2,3,4,4,-2])
 
 

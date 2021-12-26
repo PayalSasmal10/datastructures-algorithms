@@ -15,7 +15,7 @@ def largestEelement(arr):
     largestNumber = 0
     for i in arr:
         largestNumber = max(largestNumber,i)
-    return largestNumber[-1,-2,-3,-3,8]
+    return largestNumber
 
 
 print(largestEelement([-1,-2,-3,-3,8]))
