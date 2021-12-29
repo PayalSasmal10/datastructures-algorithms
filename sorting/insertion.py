@@ -1,3 +1,5 @@
+# insertion sort time complexity for sorted array is O(n)
+# for unseorted arry, it is O(n^2)
 from time import time
 
 # arr_list = [-2, 3, 4, -1, 5, -12, 6, 1, 3]
