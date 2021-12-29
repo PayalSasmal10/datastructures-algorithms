@@ -1,1 +1,1 @@
-# datastructures-algorithoms
+# datastructures-algorithoms practice
