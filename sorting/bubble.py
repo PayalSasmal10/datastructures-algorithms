@@ -1,3 +1,4 @@
+# bubble sort best case time complexity is O(n) when array is already sorted. 
 from time import time
 arr_list = [1,2,3,4,5]
 def bubbleSort(arr):
