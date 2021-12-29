@@ -14,6 +14,7 @@ def palindrome(palimdromString):
 
 palindrome(palindromString)
 
+# reverse function time complexity is O(n)
 def palindrome1(palindromString):
     if palindromString == reversed(palindromString):
         print("It's a palindrom string 2")
