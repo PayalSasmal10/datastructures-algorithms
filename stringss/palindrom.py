@@ -1,4 +1,4 @@
-# time complexity is O(n)
+# time complexity is O(n) 
 palindromString = input()
 
 def palindrome(palimdromString):
