@@ -1,5 +1,6 @@
 # input = ["a", "a", "b", "b", "c", "c", "c"]
 # o/p = a2b2c3
+# O(n) time complexity
 
 string_chr = ["a", "a", "b", "b", "c", "c", "c"]
 
