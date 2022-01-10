@@ -1,3 +1,4 @@
+# O(logn)is the time complexity
 def binarySearch(arr,key):
     s =0
     e = len(arr) - 1

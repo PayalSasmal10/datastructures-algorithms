@@ -1,5 +1,6 @@
 # find 4 exists in array or not.
 # Linear serach means serach the element until unless it get that
+# o(n) time complexity
 class linearSearch:
     
     def findthenumber(arr, target):
