@@ -25,13 +25,30 @@ def printSubArraySum1(arr):
     largestSum = 0
     for i in arr:
         currentSum = currentSum + i
+        largestSum = max(currentSum,largestSum)
         if currentSum < 0:
             currentSum = 0
-        largestSum = max(currentSum,largestSum)
+        
 
     print(largestSum)
 
-# printSubArraySum1([2,3,4,-1,5,-12,6,1,3])
-printSubArraySum1([1,-2,3,4,4,-2])
+printSubArraySum1([2,3,4,-1,5,-12,6,1,3])
+# printSubArraySum1([1,-2,3,4,4,-2])
+# printSubArraySum1([-2])
 
 
+# O(n) using Prefix sum algo- this is kadane's. O(1) space. for all kind of test cases
+
+def printSubArraySum2(arr):
+    currentSum = 0
+    largestSum = 0
+    for i in arr:
+        currentSum = currentSum + i
+        largestSum = max(currentSum,largestSum)
+        if currentSum < 0:
+            currentSum = 0
+        
+
+    print(largestSum)
+
+printSubArraySum1([2,3,4,-1,5,-12,6,1,3])
