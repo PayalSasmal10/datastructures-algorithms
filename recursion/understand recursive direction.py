@@ -3,7 +3,7 @@
 #increasing order
 def recursiveDirectionIncreasingOrder(n):
     if n == 0:
-        return n
+        return
     else:
         recursiveDirectionIncreasingOrder(n-1)
         print(n)
@@ -16,7 +16,7 @@ print("##############################################################")
 
 def recursiveDirectionDecreasingOrder(n):
     if n == 0:
-        return n
+        return
     else:
         print(n)
         return recursiveDirectionDecreasingOrder(n-1)
