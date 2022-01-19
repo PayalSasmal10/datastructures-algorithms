@@ -2,8 +2,10 @@
 
 arr = [2,5,7,89,2]
 i = 0
-key = 2
+key = 10
 def firstoccurance(arr,i,key):
+    if i != key:
+        return -1
     if arr[i] == key:
         return i
     return firstoccurance(arr,i+1,key)
