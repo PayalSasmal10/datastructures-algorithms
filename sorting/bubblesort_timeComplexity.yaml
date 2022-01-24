@@ -1,0 +1,18 @@
+
+
+arr = [4,8,1,2,6,7]
+
+T(n) = (n-5) + (n-4) + (n-3) +...+n #iterate till 5 as the lenth of the array is 6
+     = n - (1+2+3+4+5...n)          # (1+2+3+4+5...n) this portion looks like sum of Arithmetic series
+     = n - n*(a+L)/2                # n= number of terms, a= first terms,L=last terms
+     = n - n(1+n)/2
+     = n - (n+n^2)/2
+     = (2n - n - n^2)/2
+     = (n - n^2)/2
+     = O((n-n^2)/2)
+     = O(n^2)                       # removed non-dominanat terms which is O(n) and constant i.e 2
+
+
+
+
+     
