@@ -1,7 +1,12 @@
-# O(logn)is the time complexity
+# O(logn)is the time complexity.
+#Binary search array should be in sorting order
+
+from numpy import append
+
+
 def binarySearch(arr,key):
     s =0
-    e = len(arr) - 1
+    e = len(arr)- 1
 
     while(s<=e):
         mid = (s+e)//2
@@ -14,6 +19,6 @@ def binarySearch(arr,key):
     return -1
 
 
-print("Index of the key is",binarySearch([90,50,45,38,9], 45))
+print("Index of the key is",binarySearch([0,1,2,4,5,6,7], 2))
 
 
