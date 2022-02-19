@@ -8,6 +8,10 @@ def firstoccurance(arr,i,key):
     #     return -1
     if arr[i] == key:
         return i
+    elif i == len(arr) -1:
+        return -1
     return firstoccurance(arr,i+1,key)
+    
 
 print(firstoccurance(arr,i,key))
+
