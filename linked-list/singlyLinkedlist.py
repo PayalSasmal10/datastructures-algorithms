@@ -13,9 +13,9 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while(temp):
-            print(temp.data)
+            print(temp.data, " -> ", end="")
             temp = temp.next
-        
+        print("end")
 
 
 linkedlist = LinkedList()
