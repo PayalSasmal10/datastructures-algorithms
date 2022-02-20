@@ -19,9 +19,10 @@ class reverseLinkedlist:
         self.head = prv
     
     def printList(self):
-        while(self.head):
-            print(self.head.data)
-            self.head = self.head.next
+        temp = self.head
+        while(temp):
+            print(temp.data)
+            temp = temp.next
 
 
 reverselinkedlist = reverseLinkedlist()
