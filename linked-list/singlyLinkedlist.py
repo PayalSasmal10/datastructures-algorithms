@@ -17,7 +17,7 @@ class LinkedList:
             temp = temp.next
         print("end")
 
-
+# Insert values at ends
 linkedlist = LinkedList()
 linkedlist.head = Node(1)
 secodn_value = Node(2)
@@ -31,4 +31,11 @@ linkedlist.tail = third_value
 
 linkedlist.printList()
 
+# insert the value at first postion
+next_head = linkedlist.head
+linkedlist.head = Node(5)
+next_head.next = secodn_value
+linkedlist.head.next = next_head
+
+linkedlist.printList()
     
