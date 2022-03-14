@@ -22,39 +22,36 @@ class Node:
         if data == self.data:
             return
         
-        print("self.data = ", self.data)
+        #print("self.data = ", self.data)
         # add data in left node
         if data < self.data:
-            print("self.left = ", self.left)
+            #print("self.left = ", self.left)
             if self.left:
                 self.left.buildTree(data)
+                #print("inside self.left = ", self.left)
             else:
                 self.left = Node(data)
         # add data in right node
-        elif data> self.data:
-            if self.right is None:
-                self.right = Node(data)
-            else:
+        else:
+            if self.right:
                 self.right.buildTree(data)
+            else:
+                self.right = Node(data)
 
-        # self.root = Node(data)
-        # self.left.buildTree(data)
-        # self.right.buildTree(data)
 
     def preorder(self,root):
-        if root:
+          if root:
             print(root.data)
             self.preorder(root.left)
             self.preorder(root.right)
 
-
 s = Node(4)
 s.buildTree(3)
+#print(s.buildTree(3))
 s.buildTree(1)
-s.buildTree(4)
-s.buildTree(5)
-s.buildTree(6)
+# s.buildTree(4)
+# s.buildTree(5)
+# s.buildTree(6)
 s.preorder(s)
 
-s.preorder()
 
