@@ -19,18 +19,34 @@ class Node:
                 self.right.buildTree(data)
             else:
                 self.right = Node(data)
+    # 1st way to fetch the data
 
-    def findMin(self,root):
-        if root:
-            if root.left == None:
-                print(root.data)
-            self.findMin(root.left)
+    # def findMin(self,root):
+    #     if root:
+    #         if root.left == None:
+    #             print(root.data)
+    #         self.findMin(root.left)
 
-    def findMax(self, root):
-        if root:
-            if root.right == None:
-                print(root.data)
-            self.findMax(root.right)
+    # def findMax(self, root):
+    #     if root:
+    #         if root.right == None:
+    #             print(root.data)
+    #         self.findMax(root.right)
+    
+    # 2nd way
+    def findMin(root):
+        current_node = root
+        
+        while(current_node.left != None):
+            current_node = current_node.left
+        print(current_node.data)
+
+    def findMax(root):
+        current_node = root
+
+        while(current_node.right != None):
+            current_node = current_node.right
+        print(current_node.data)
 
 
 s = Node(4)
@@ -39,6 +55,10 @@ s.buildTree(1)
 s.buildTree(3)
 s.buildTree(6)
 s.buildTree(5)
-s.findMin(s)
-s.findMax(s)
+# for 1st way
+#s.findMin(s)
+#s.findMax(s)
+
+s.findMin()
+s.findMax()
 
