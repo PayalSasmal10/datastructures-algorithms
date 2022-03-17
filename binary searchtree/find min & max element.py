@@ -42,7 +42,7 @@ class Node:
         print(current_node.data)
 
     def findMax(root):
-        current_node = root
+        current_node = root # instead of current_node we can use root directly
 
         while(current_node.right != None):
             current_node = current_node.right
