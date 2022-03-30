@@ -1,4 +1,4 @@
-# create a 2d array
+# create a 2d array  
 
 # class twoDimensionalArray:
 arr= []
