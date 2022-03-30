@@ -8,7 +8,7 @@ class SingleLinkedList:
     def __init__(self) -> None:
         self.head = None
 
-    # add_front without tail
+    # add_front without tail 
     def add_front(self,data):
         if (self.head == None):
             new_node = Node(data)
