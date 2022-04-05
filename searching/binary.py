@@ -1,7 +1,7 @@
 # O(logn)is the time complexity.
 #Binary search array should be in sorting order
 
-from numpy import append
+
 
 
 def binarySearch(arr,key):
