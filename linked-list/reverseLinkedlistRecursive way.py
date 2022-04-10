@@ -7,10 +7,21 @@ class reverseLinkedlist:
     def __init__(self) -> None:
         self.head = None
 
+    def add_front(self, data):
+        if self.head == None:
+            newNode = Node(data)
+            self.head = newNode
+
+        else:
+            newNode = Node(data)
+            newNode.next = self.head
+            self.head = newNode
+
     def reverselist(self, head): 
         if head == None or head.next == None:
+            print("inside")
             return head
-
+        
         newHead = self.reverselist(head.next)
         headNext = head.next
         headNext.next = head
@@ -26,14 +37,11 @@ class reverseLinkedlist:
 
 
 reverselinkedlist = reverseLinkedlist()
-reverselinkedlist.head = Node(3)
-second_value = Node(7)
-thrird_value = Node(9)
-
-reverselinkedlist.head.next = second_value
-second_value.next = thrird_value
-
-#reverselinkedlist.printList()
-reverselinkedlist.reverselist(reverselinkedlist.head)
+reverselinkedlist.add_front(4)
+reverselinkedlist.add_front(2)
+reverselinkedlist.add_front(14)
+reverselinkedlist.add_front(48)
+reverselinkedlist.printList()
+reverselinkedlist.head = reverselinkedlist.reverselist(reverselinkedlist.head)
 reverselinkedlist.printList()
 

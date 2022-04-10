@@ -10,12 +10,11 @@ class reverseLinkedlist:
     def reverselist(self):
         prv = None
         current = self.head
-        next = None
         while(current is not None):
-            next = current.next
+            temp = current.next
             current.next = prv
             prv = current 
-            current = next
+            current = temp
         self.head = prv
     
     def printList(self):
