@@ -1,6 +1,3 @@
-from datetime import date
-
-
 class Node:
     def __init__(self, data) -> None:
         self.data = data
@@ -33,11 +30,12 @@ class Node:
             self.inorder(root.right)
 
 
-s = Node(30)
-s.buildTree(25)
-s.buildTree(50)
-s.buildTree(45)
-s.buildTree(76)
+s = Node(10)
+s.buildTree(5)
+s.buildTree(15)
+s.buildTree(3)
+s.buildTree(7)
+s.buildTree(18)
 
 s.inorder(s)
 

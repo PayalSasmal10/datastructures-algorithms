@@ -27,10 +27,11 @@ class Node:
             print(root.data)
 
 
-s = Node(30)
-s.buildTree(25)
-s.buildTree(40)
-s.buildTree(50)
-s.buildTree(75)
+s = Node(10)
+s.buildTree(5)
+s.buildTree(15)
+s.buildTree(3)
+s.buildTree(7)
+s.buildTree(18)
 
 s.postOrder(s)

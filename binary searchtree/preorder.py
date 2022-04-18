@@ -33,12 +33,13 @@ class BuildTree:
 
 
 
-tree = BuildTree(15)
-tree.buildTree(10)
-tree.buildTree(20)
-tree.buildTree(30)
-tree.buildTree(15)
-tree.preorder(tree)
+s = BuildTree(10)
+s.buildTree(5)
+s.buildTree(15)
+s.buildTree(3)
+s.buildTree(7)
+s.buildTree(18)
+s.preorder(s)
 
 
 
