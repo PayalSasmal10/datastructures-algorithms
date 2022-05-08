@@ -1,0 +1,13 @@
+1. Nearest greater to left
+2. Nearest greater to right
+3. Nearest smallest to left
+4. Nearest smallest to right
+5. stock span problem
+6. maximum area histrogram
+7. maximum area of rectangle in binary matrix
+8. Rain water trapping
+9. Implementing a min stack
+10. Implement stack using heap
+11. The celebrity problem
+12. Longest valid parenthesis
+13. Iterative Tower of hanoi
