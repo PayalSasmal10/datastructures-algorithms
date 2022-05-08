@@ -1,5 +1,5 @@
-1. Nearest greater to left
-2. Nearest greater to right
+1. Nearest greater to right
+2. Nearest greater to left
 3. Nearest smallest to left
 4. Nearest smallest to right
 5. stock span problem
