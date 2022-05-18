@@ -5,15 +5,15 @@ o/p: "", a, aa, ab, aab, b
 """
 
 class A:
-    new_dict = {}
+    
     def unique_subset(self, sub_str):
         output = ""
         self.solve(sub_str,output)
 
-    def solve(self,sub_str,output):
+    def solve(self,sub_str,output, new_dict = {}):
         if len(sub_str) == 0:
-            self.new_dict[output] = 1
-            self.get_dict(self.new_dict)
+            new_dict[output] = 1
+
             return
         
 
@@ -25,11 +25,6 @@ class A:
         self.solve(sub_str,output2)
 
         
-
-
-    def get_dict(self,dictt):
-        for i in dictt:
-            print(i)
 
         
 
