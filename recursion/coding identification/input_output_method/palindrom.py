@@ -1,5 +1,6 @@
 # find palindrome using recursion
 
+# time complexity is o(n)
 strr = "aabcaa"
 
 class A:
